@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가상요소</title>
+    <style>
+        .box > p::after {
+            content: '하지만 주말에도 출근';
+            color: chocolate;
+        }
+
+        .box > p::before {
+            content: '지금은 수업중';
+            color: blueviolet;
+        }
+
+        .box::before {
+            width: 1000px;
+            height: 3px;
+            background-color: rgb(50, 0, 212);
+            content: "";
+            display: block;
+        }
+        
+        .box {
+            width: 1000px;
+            height: 500px;
+            background-color: rgb(255, 253, 122);
+            position: relative;
+        }
+
+        .box::after {
+            width: 1000px;
+            height: 3px;
+            background-color: rgb(30, 255, 0);
+            content: "";
+            display: block;
+            position: absolute;
+            bottom: 0;
+        }
+        
+        /* color 속성은 텍스트 색 변경. */
+        /* ::before, ::after 가상요소는 항상 content:"" 함께 사용
+        가상요소는 inline이기 때문에 영역 설정이 어려움 display: block:을 넣어줘야 산다. 
+        display 속성이란 요소가 기본으로 가지고 있는 inline, block 속성을 변경 할 수 있는 속성이다.*/
+    </style>
+</head>
+<body>
+    <div class="box">
+        <P>오늘 내일만 버티면 휴일</P>
+    </div>
+    <!-- 꾸며줄 때 사용됨 -->
+</body>
+</html>

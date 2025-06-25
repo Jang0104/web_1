@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>텍스트 스타일</title>
+    <style>
+        
+
+        h1 {
+            color: violet;
+            font-size: 50px;
+            /* font-size 속성 
+            - em(부모 요소의 폰트 크기가 16pxㅇ\이라면 자식요소에게 1em 이라고 지정 시
+            자식요소가 부모요소를 따라 16px이 된다. 2em은 부모 요소의 2배 값이 된다.) 
+            - rem(html의 폰트 크기를 기준으로 상대적인 크기.)
+            */
+
+            font-weight: 300;
+        }
+
+        /* span {
+            display: block;
+        } */
+
+        .text_align_left {
+            text-align: left;
+
+        }
+
+        .text_align_center {
+            text-align: center;
+        }
+
+        .text_align_right {
+            text-align: right;
+        }
+
+        .vertical_container>p {
+            font-size: 50px;
+        }
+
+        .vertical_1>span {
+            font-size: 16px;
+            vertical-align: top;
+        }
+
+        .vertical_2>span {
+            vertical-align: middle;
+            font-size: 16px;
+        }
+
+        .vertical_3>span {
+            vertical-align: right;
+            font-size: 16px;
+        }
+
+        .vertical_1 {
+            /* text-decoration: underline; */
+            border-bottom: 1px solid #000;
+        }
+
+        .vertical_2 {
+            text-decoration: line-through;
+        }
+
+        .vertical_3 {
+            text-decoration: overline;
+        }
+
+        .line-height1 {
+            font-size: 40px;
+            line-height: 54px;
+        }
+
+        .line-height2 {
+            line-height: 200%;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>텍스트 설정</h1>
+
+    <div class="text_align_left">왼쪽으로 갈거임</div>
+    <div class="text_align_center">가운데로 갈래</div>
+    <div class="text_align_right">나는 오른쪽</div>
+
+    <div>
+        <span class="text_align_left">왼쪽으로 갈거임</span>
+        <span class="text_align_center">가운데로 갈래</span>
+        <span class="text_align_right">나는 오른쪽</span>
+    </div>
+
+    <div class="vertical_container">
+        <p class="vertical_1">
+            서브텍스트 맨 위에 올거임
+            <span>서브 텍스트</span>
+        </p>
+        <p class="vertical_2">
+            서브텍스트 가운데에 올거임
+            <span>서브 텍스트</span>
+        </p>
+        <p class="vertical_3">
+            서브텍스트 밑에 올거임
+            <span>서브 텍스트</span>
+        </p>
+    </div>
+
+    <p class="line-height1">line-height 실습</p>
+    <p class="line-height2">line-height 실습</p>
+    <p class="line-height3">line-height 실습</p>
+
+</body>
+
+<!-- @font-face {
+    font-family: 'LanaPixel';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2506-1@1.0/LanaPixel.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gugi&display=swap" rel="stylesheet"> -->
+
+</html>s
