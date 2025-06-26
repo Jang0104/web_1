@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>poistion</title>
+    <style>
+        body {
+            height: 5000px;
+        }
+
+        .container {
+            position: relative;
+            width: 1000px;
+            border: 1px solid #000;
+            margin: 50px;
+            height: 500px;
+        }
+
+        .box {
+            width: 150px;
+            height: 50px;
+            text-align: center;
+            line-height: 50px;
+            position: absolute;
+        }
+
+        .b1 {
+            background-color: salmon;
+        }
+
+        .b2 {
+            background-color: aqua;
+            top: 50%;
+            left: 50%;
+            /* position absolute 속성을 부여한 후 위치를 잡아줄 때 사용함 */
+            transform: translate(-50%, -50%);
+        }
+
+        .b3 {
+            background-color: yellow;
+            bottom: 0;
+            right: 0;
+        }
+
+        p {
+            position: absolute;
+        }
+
+        .top_btn {
+            position: fixed;
+            right: 50px;
+            bottom: 50px;
+            width: 100px;
+            height: 100px;
+            background-color: yellowgreen;
+            text-align: center;
+            line-height: 100px;
+            border-radius: 16px;
+
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+            font-size: 24px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container" id="TOP">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur corrupti vero nemo, id, placeat minus
+            sapiente unde mollitia delectus molestiae repellat ipsam quasi culpa porro nisi odit facilis deserunt hic!
+        </p>
+        <div class="box b1">왼쪽 위</div>
+        <div class="box b2">중간 </div>
+        <div class="box b3">왼쪽 아래</div>
+    </div>
+
+    <div class="top_btn">
+        <a href="#top">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <mask id="mask0_1_11" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="1" y="2" width="22" height="20">
+                <path d="M2.5 12L12 3L21.5 12H15.5V21H8.5V12H2.5Z" fill="#555555" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </mask>
+                <g mask="url(#mask0_1_11)">
+                <path d="M0 0H24V24H0V0Z" fill="white"/>
+                </g>
+                </svg>
+        </a>
+    </div>
+</body>
+
+</html>

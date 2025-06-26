@@ -7,6 +7,15 @@
     <title>텍스트 스타일</title>
     <style>
         
+        @font-face {
+            font-family: star_dust;
+            src: url(./PF스타더스트\ 3.0\ Bold.ttf);
+        }
+
+        body {
+            font-family: 'star_dust';
+        }
+        /* 위, 외부 폰트 다운받아서 사용하는 법 */
 
         h1 {
             color: violet;
@@ -77,6 +86,13 @@
         .line-height2 {
             line-height: 200%;
         }
+
+        .letter_spacing_1 {
+            letter-spacing: 10px;
+        }
+        .letter_spacing_2 {
+            letter-spacing: -10px;
+        }
     </style>
 </head>
 
@@ -112,6 +128,8 @@
     <p class="line-height2">line-height 실습</p>
     <p class="line-height3">line-height 실습</p>
 
+    <p class="letter_spacing_1">자간을 설정합니다</p>
+    <p class="letter_spacing_2">자간을 설정합니다</p>
 </body>
 
 <!-- @font-face {
