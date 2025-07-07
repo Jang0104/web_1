@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>아이콘헤더</title>
+    <script src="https://kit.fontawesome.com/de408464a5.js" crossorigin="anonymous"></script>
+    <style>
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 60px;
+        }
+        .icon_list {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            list-style: none;
+            gap: 16px;
+        }
+
+        .icon_list a {
+            color: black;
+        }
+        h1 > a > image {
+            width: 258px;
+            height: 36px;
+        }
+    </style>
+    <!-- https://velog.io/@rayong/Fonsts-Awesome-%ED%8F%B0%ED%8A%B8%EC%96%B4%EC%8D%B8-%EC%95%84%EC%9D%B4%EC%BD%98-%ED%81%AC%EA%B8%B0-%EC%A1%B0%EC%A0%88 -->
+</head>
+<body>
+    <header>
+        <h1>
+           <a href="#">
+                <img src="logo_bk.png" alt="">
+           </a>
+        </h1>
+
+        <ul class="icon_list">
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-magnifying-glass fa-2xl"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-cart-shopping fa-2xl"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa-regular fa-circle-user fa-2xl"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-globe fa-2xl"></i>
+                </a>
+            </li>
+        </ul>
+    </header>
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>오뚜기</title>
+    <style>
+        section {
+            width: 100%;
+            display: flex;
+            gap: 24px;
+            padding: 0 24px;
+            box-sizing: border-box;
+        }
+
+        article {
+            width: 40%;
+            height: 500px;
+            border-radius: 24px;
+            transition: 0.5s;
+            color: white;
+            
+        }
+
+        /* article:hover {
+            flex-shrink: 0;
+        } */
+
+        .box {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 500px;
+            gap: 24px;
+            background: #000;
+        }
+
+        article:hover .box {
+            background: #000;
+
+        }
+
+        article:nth-child(1) {
+            background: url(환경.jpg);
+        }
+
+        article:nth-child(2) {
+            background: url(하트.jpg);
+        }
+
+        article:nth-child(3) {
+            background: url(지배구조.jpg);
+            background-size: cover;
+            /* transition: 0.5s; */
+        }
+
+        h2 {
+            font-size: 40px;
+            margin: 0;
+        }
+
+        p {
+            font-size: 24px;
+            word-break: keep-all;
+        }
+
+        .hidden_text {
+            opacity: 0;
+            transition: 0.5s
+        }
+
+        article:hover .hidden_text {
+            opacity: 1;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <section>
+        <article>
+            <div class="box">
+                <p>Environmental</p>
+                <h2>환경</h2>
+                <div class="hidden_text"></div>
+                <div>
+                    <p>
+                        자연과 함꼐 맛으로 행복한 세상을 만들기 위한 의미 있는 걸음을 내딛습니다.
+                    </p>
+                    <img src="./화살표.svg" alt="">
+                </div>
+            </div>
+        </article>
+        <article>
+            <div class="box">
+                <p>Social</p>
+                <h2>사회</h2>
+                <div class="hidden_text"></div>
+                <div>
+                    <p>
+                        기업활동에 반하는 어떠한 행위도 허용하지 않으며, 깨끗하고 정직한 기업문화를 만들어갑니다.
+                    </p>
+                    <img src="./화살표.svg" alt="">
+                </div>
+            </div>
+        </article>
+        <article>
+            <div class="box">
+                <p>Governance</p>
+                <h2>지배구조</h2>
+                <div class="hidden_text"></div>
+                <div>
+                    <p>모든 이해관계자의 권익을 증진하는 건전한 지배구조의 기업으로 도약하고자 합니다.</p>
+                    <img src="./화살표.svg" alt="">
+                </div>
+            </div>
+        </article>
+    </section>
+    <!-- 부모 자식 관계 확실하게 정리. (단축키 사용 자제) -->
+</body>
+
+</html>
