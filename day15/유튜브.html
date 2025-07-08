@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>유튜브 답글</title>
+    <script src="https://kit.fontawesome.com/de408464a5.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .comment_container {
+            display: flex;
+            width: 1200px;
+            justify-content: space-between;
+        }
+
+        figure {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+        }
+
+        .baisis {
+            flex-basis: 90%;
+        }
+
+        h2,
+        .comment_content {
+            font-size: 14px;
+        }
+
+        .icon_box {
+            display: flex;
+            margin: 16px 0;
+            align-items: center;
+
+        }
+
+        .icon_box > div:nth-child(1),
+        .icon_box > div:nth-child(2),
+        .icon_box > figure {
+            margin-right: 16px;
+            
+        }
+        
+        button {
+            background: none;
+            border: none;
+        }
+
+        .icon_box > figure > img {
+            width: 24px;
+            height: 24px;
+        }
+
+        .icon_box > p {
+            font-size: 12px;
+            padding: 8px 10px;
+            border-radius: 16px;
+            transition: 0.3s;
+        }
+
+        .icon_box > p:hover {
+            background: palegreen;
+            color: #fff;
+        }
+
+        .recomment_box {
+
+        }
+    </style>
+</head>
+
+<body>
+    <article class="comment_container">
+        <figure>
+            <img src="몽키스패너.jpg" alt="">
+        </figure>
+
+        <div class="baisis">
+            <h2>@apple_mango</h2>
+            <p class="comment_content">
+                귀여운 우리 햄스터 한별이를 청화대로
+            </p>
+
+            <div class="icon_box">
+                <div>
+                    <button>
+                        <!-- 좋아요 아이콘 들어가야함 -->
+                        <i class="fa-solid fa-thumbs-up fa-xl"></i>
+                    </button>
+                    <span>4</span>
+                </div>
+
+                <div>
+                    <button>
+                        <!-- 싫어요 아이콘 들어가야함 -->
+                        <i class="fa-solid fa-thumbs-down fa-xl"></i>
+                    </button>
+                </div>
+
+                <figure>
+                    <img src="" alt="">
+                </figure>
+                
+            </div>
+            <div class="comment_container">
+                class="recomment_box"
+                <button>
+                    <!-- 아래 꺽쇄 아이콘 -->
+                    <i class="fa-solid fa-arrow-down fa-xl"></i>
+                    <span>
+                       답글 1개
+                    </span>
+                </button>
+            </div>
+        </div>  
+
+        <div>
+            <button>
+                <!-- 앨립스버티컬 아이콘 -->
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+            </button>
+        </div>
+         
+    </article>
+    
+</body>
+</html>
