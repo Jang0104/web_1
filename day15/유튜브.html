@@ -17,7 +17,7 @@
             justify-content: space-between;
         }
 
-        figure {
+        figure >img {
             width: 40px;
             height: 40px;
             border-radius: 50%;
@@ -68,8 +68,8 @@
             color: #fff;
         }
 
-        .recomment_box {
-
+        .recomment_box > button {
+            color: blue;
         }
     </style>
 </head>
@@ -87,6 +87,7 @@
             </p>
 
             <div class="icon_box">
+                <!-- 좋아요 박스 -->
                 <div>
                     <button>
                         <!-- 좋아요 아이콘 들어가야함 -->
@@ -95,6 +96,7 @@
                     <span>4</span>
                 </div>
 
+                <!-- 싫어요 박스 -->
                 <div>
                     <button>
                         <!-- 싫어요 아이콘 들어가야함 -->
@@ -103,12 +105,13 @@
                 </div>
 
                 <figure>
-                    <img src="" alt="">
+                    <img src="한별.jpg" alt="">
                 </figure>
                 
+                <p>답글</p>
             </div>
-            <div class="comment_container">
-                class="recomment_box"
+
+            <div class="recomment_box">
                 <button>
                     <!-- 아래 꺽쇄 아이콘 -->
                     <i class="fa-solid fa-arrow-down fa-xl"></i>
@@ -125,8 +128,7 @@
                 <i class="fa-solid fa-ellipsis-vertical"></i>
             </button>
         </div>
-         
-    </article>
-    
+    </article>    
 </body>
+
 </html>
